@@ -10,7 +10,7 @@ citation: "J. Zhang*, B. Cheng*, A. Jin*. &quot;State Space Models are Effective
 bibtex: |
   @inproceedings{zhang2026state,
     title  = {State Space Models are Effective Sign Language Learners: Exploiting Phonological Compositionality for Vocabulary-Scale Recognition},
-    author = {Zhang, Jasper and Cheng, B. and Jin, A.},
+    author = {Zhang, Jasper and Cheng, Bryan and Jin, Austin},
     booktitle = {ICLR 2026 AFAA Workshop},
     year   = {2026},
     note   = {Equal contribution}

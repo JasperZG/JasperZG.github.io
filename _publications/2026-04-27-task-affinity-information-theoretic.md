@@ -10,7 +10,7 @@ citation: "J. Zhang*, B. Cheng*. &quot;Information-Theoretic Requirements for Gr
 bibtex: |
   @inproceedings{zhang2026information,
     title  = {Information-Theoretic Requirements for Gradient-Based Task Affinity Estimation in Multi-Task Learning},
-    author = {Zhang, Jasper and Cheng, B.},
+    author = {Zhang, Jasper and Cheng, Bryan},
     booktitle = {ICLR 2026 GEM Workshop},
     year   = {2026},
     note   = {Equal contribution}

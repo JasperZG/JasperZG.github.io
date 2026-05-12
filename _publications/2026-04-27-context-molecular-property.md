@@ -10,7 +10,7 @@ citation: "J. Zhang*, B. Cheng*. &quot;When Does Context Help? A Systematic Stud
 bibtex: |
   @inproceedings{zhang2026when,
     title  = {When Does Context Help? A Systematic Study of Target-Conditional Molecular Property Prediction},
-    author = {Zhang, Jasper and Cheng, B.},
+    author = {Zhang, Jasper and Cheng, Bryan},
     booktitle = {ICLR 2026 AI4Mat Workshop},
     year   = {2026},
     note   = {Equal contribution}

@@ -10,7 +10,7 @@ citation: "J. Zhang*, B. Cheng*. &quot;The Mechanistic Invariance Test: Genomic 
 bibtex: |
   @inproceedings{zhang2026mechanistic,
     title  = {The Mechanistic Invariance Test: Genomic Language Models Fail To Learn Positional Regulatory Logic},
-    author = {Zhang, Jasper and Cheng, B.},
+    author = {Zhang, Jasper and Cheng, Bryan},
     booktitle = {ICLR 2026 GEM Workshop},
     year   = {2026},
     note   = {Oral, equal contribution}

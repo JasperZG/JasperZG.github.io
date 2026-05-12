@@ -10,7 +10,7 @@ citation: "J. Zhang*, B. Cheng*. &quot;ECLIPSE: A Composable Pipeline for Predic
 bibtex: |
   @inproceedings{zhang2026eclipse,
     title  = {ECLIPSE: A Composable Pipeline for Predicting ecDNA Formation, Evolution, and Therapeutic Vulnerabilities in Cancer},
-    author = {Zhang, Jasper and Cheng, B.},
+    author = {Zhang, Jasper and Cheng, Bryan},
     booktitle = {ICLR 2026 AI\&PDE Workshop},
     year   = {2026},
     note   = {Equal contribution}

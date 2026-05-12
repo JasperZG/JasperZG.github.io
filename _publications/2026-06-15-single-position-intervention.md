@@ -10,7 +10,7 @@ citation: "J. Zhang*, B. Cheng*. &quot;Single-Position Intervention Fails: Distr
 bibtex: |
   @inproceedings{zhang2026single,
     title  = {Single-Position Intervention Fails: Distributed Output Templates Drive In-Context Learning},
-    author = {Zhang, Jasper and Cheng, B.},
+    author = {Zhang, Jasper and Cheng, Bryan},
     booktitle = {LION20},
     year   = {2026},
     note   = {Oral, equal contribution}
