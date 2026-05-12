@@ -1,0 +1,101 @@
+/* ==========================================================================
+   POLISH / OVERRIDES
+   Loaded last in assets/css/main.scss so it overrides earlier rules.
+   ========================================================================== */
+
+/* Smooth anchor jumps and account for the sticky masthead */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+/* Crisper text rendering */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Tighter, more deliberate heading hierarchy */
+h1, h2, h3, h4 {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.55em;
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+/* Links: subtle underline that brightens on hover */
+a {
+  transition: color 0.15s ease-in-out, text-decoration-color 0.15s ease-in-out;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+}
+
+/* Publication entries: cleaner spacing, subtle dividers */
+.publications-list .list__item {
+  margin-bottom: 0.5em;
+}
+
+.publications-list .archive__item {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.publications-list .list__item:last-of-type .archive__item {
+  border-bottom: none;
+}
+
+.archive__item-title {
+  font-size: 1.05em;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0.35em;
+  line-height: 1.35;
+}
+
+.archive__item-excerpt {
+  margin-top: 0.4em;
+  font-size: 0.95em;
+  color: var(--global-text-color-light);
+}
+
+/* Sidebar avatar: clean ring instead of heavy border */
+.author__avatar img {
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: 0 0 0 1px var(--global-border-color);
+}
+
+/* Masthead: a hair lighter, no extra noise */
+.masthead {
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+/* Quieter, smaller footer */
+.page__footer {
+  font-size: 0.85em;
+}
+
+.page__footer-copyright {
+  opacity: 0.65;
+}
+
+/* CV download button: less shouty */
+.btn.btn--primary {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
