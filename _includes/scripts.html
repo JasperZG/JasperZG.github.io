@@ -34,5 +34,40 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
+
+    // Active section highlight on top-nav links pointing to in-page anchors
+    var navLinks = Array.prototype.slice.call(
+      document.querySelectorAll('.greedy-nav a[href*="#"]')
+    );
+    var sectionMap = {};
+    navLinks.forEach(function(link) {
+      var hash = link.getAttribute('href').split('#')[1];
+      if (!hash) return;
+      var section = document.getElementById(hash);
+      if (section) sectionMap[hash] = { link: link, section: section };
+    });
+
+    function clearActive() {
+      navLinks.forEach(function(l) {
+        l.parentElement && l.parentElement.classList.remove('is-current-section');
+      });
+    }
+
+    if ('IntersectionObserver' in window && Object.keys(sectionMap).length) {
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          var id = entry.target.id;
+          var record = sectionMap[id];
+          if (!record) return;
+          if (entry.isIntersecting) {
+            clearActive();
+            record.link.parentElement.classList.add('is-current-section');
+          }
+        });
+      }, { rootMargin: '-30% 0px -60% 0px', threshold: 0 });
+      Object.keys(sectionMap).forEach(function(id) {
+        io.observe(sectionMap[id].section);
+      });
+    }
   })();
 </script>
