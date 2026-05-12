@@ -16,6 +16,8 @@ $dark-gray                  : #27272a;  // zinc 800
 $darker-gray                : #18181b;  // zinc 900
 $light-gray                 : #a1a1aa;  // zinc 400
 $lighter-gray               : #e4e4e7;  // zinc 200
+$accent                     : #8a6f3a;  // muted gold for light backgrounds
+$accent-bright              : #6e5728;  // deeper gold for hover
 
 /* Color codes used for the site */
 $danger-color               : #dc2626;
@@ -44,9 +46,9 @@ $sidebar-screen-min-width   : 1024px;
     --global-code-background-color      : #f4f4f5;  // zinc 100
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$darker-gray};
-    --global-link-color-hover           : #000000;
-    --global-link-color-visited         : #{$dark-gray};
+    --global-link-color                 : #{$accent};
+    --global-link-color-hover           : #{$accent-bright};
+    --global-link-color-visited         : #{$accent};
     --global-masthead-link-color        : #{$dark-gray};
     --global-masthead-link-color-hover  : #000000;
     --global-text-color                 : #{$darker-gray};

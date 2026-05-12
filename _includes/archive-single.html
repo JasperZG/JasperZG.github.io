@@ -80,5 +80,11 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+    {% if post.bibtex %}
+      <button class="bibtex-copy" type="button" data-bibtex="{{ post.bibtex | escape }}">
+        <span class="bibtex-copy__label">BibTeX</span>
+      </button>
+    {% endif %}
+
   </article>
 </div>

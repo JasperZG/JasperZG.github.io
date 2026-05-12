@@ -35,6 +35,37 @@
       });
     }
 
+    // BibTeX copy-to-clipboard buttons
+    var bibtexButtons = document.querySelectorAll('.bibtex-copy');
+    bibtexButtons.forEach(function(b) {
+      b.addEventListener('click', function() {
+        var text = b.getAttribute('data-bibtex') || '';
+        var label = b.querySelector('.bibtex-copy__label');
+        var original = label ? label.textContent : 'BibTeX';
+        var done = function() {
+          if (label) label.textContent = 'Copied!';
+          b.classList.add('is-copied');
+          setTimeout(function() {
+            if (label) label.textContent = original;
+            b.classList.remove('is-copied');
+          }, 1500);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done).catch(function() {});
+        } else {
+          var ta = document.createElement('textarea');
+          ta.value = text;
+          ta.setAttribute('readonly', '');
+          ta.style.position = 'absolute';
+          ta.style.left = '-9999px';
+          document.body.appendChild(ta);
+          ta.select();
+          try { document.execCommand('copy'); done(); } catch (e) {}
+          document.body.removeChild(ta);
+        }
+      });
+    });
+
     // Active section highlight on top-nav links pointing to in-page anchors
     var navLinks = Array.prototype.slice.call(
       document.querySelectorAll('.greedy-nav a[href*="#"]')

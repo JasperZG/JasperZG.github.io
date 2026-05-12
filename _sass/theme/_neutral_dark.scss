@@ -20,9 +20,11 @@ $background                 : #18181b;  // zinc 900
 $background-light           : #27272a;  // zinc 800
 $background-lighter         : #3f3f46;  // zinc 700
 $text                       : #e4e4e7;  // zinc 200
-$link                       : #fafafa;  // zinc 50
-$link-dark                  : #d4d4d8;  // zinc 300
-$link-light                 : #f4f4f5;  // zinc 100
+$accent                     : #c8b48c;  // warm muted gold
+$accent-bright              : #dac9a3;  // brighter accent for hover
+$link                       : $accent;
+$link-dark                  : $accent;
+$link-light                 : $accent-bright;
 
 /* Color codes used for the site */
 $danger-color               : #ef4444;
@@ -52,7 +54,7 @@ html[data-theme="dark"] {
     --global-code-text-color            : #{$light-gray};
     --global-fig-caption-color          : #{$gray};
     --global-link-color                 : #{$link};
-    --global-link-color-hover           : #ffffff;
+    --global-link-color-hover           : #{$accent-bright};
     --global-link-color-visited         : #{$link-dark};
     --global-masthead-link-color        : #{$text};
     --global-masthead-link-color-hover  : #ffffff;
