@@ -73,11 +73,12 @@ a {
   color: var(--global-text-color-light);
 }
 
-/* Sidebar avatar: clean ring instead of heavy border */
+/* Sidebar avatar: bigger photo with a thin accent ring */
 .author__avatar img {
   border: none !important;
   padding: 0 !important;
-  box-shadow: 0 0 0 1px var(--global-border-color);
+  max-width: 240px !important;
+  box-shadow: 0 0 0 2px var(--global-link-color), 0 6px 14px rgba(0, 0, 0, 0.25) !important;
 }
 
 /* Masthead: a hair lighter, no extra noise */
@@ -248,19 +249,126 @@ button:focus:not(:focus-visible) {
   text-decoration: none;
 }
 
-/* More deliberate divider before each major section heading */
+/* Centered short rule above each major section heading; heading text stays left */
 h2 {
   position: relative;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 h2::before {
   content: "";
   display: block;
-  width: 2.5em;
-  height: 2px;
+  width: 3em;
+  height: 1px;
   background-color: var(--global-link-color);
-  margin-bottom: 0.6em;
-  opacity: 0.6;
+  margin: 0 auto 1.4em auto;
+  opacity: 0.7;
+}
+
+/* News list: custom caret bullets in the accent color */
+h2#news + ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+h2#news + ul li {
+  position: relative;
+  padding-left: 1.6em;
+  margin-bottom: 0.55em;
+  line-height: 1.65;
+}
+
+h2#news + ul li::before {
+  content: "›";
+  position: absolute;
+  left: 0.15em;
+  top: -0.05em;
+  color: var(--global-link-color);
+  font-weight: 700;
+  font-size: 1.25em;
+  line-height: 1.65;
+}
+
+/* "Oral" badge next to oral-presentation papers */
+.oral-badge {
+  display: inline-block;
+  padding: 0.1em 0.55em;
+  margin-left: 0.35em;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-bg-color);
+  background-color: var(--global-link-color);
+  border-radius: 2px;
+  vertical-align: 0.12em;
+  font-style: normal;
+}
+
+/* Compact publication meta line: venue · year · arXiv · BibTeX */
+.archive__item-meta {
+  margin: 0.25em 0 0.55em 0;
+  font-size: 0.92em;
+  color: var(--global-text-color-light);
+}
+
+.archive__item-meta .venue {
+  font-style: italic;
+}
+
+.archive__item-meta .year {
+  font-variant-numeric: tabular-nums;
+}
+
+.archive__item-meta .meta-sep {
+  display: inline-block;
+  margin: 0 0.55em;
+  opacity: 0.45;
+}
+
+.archive__item-meta .meta-link {
+  color: var(--global-link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.archive__item-meta .meta-link:hover {
+  text-decoration: underline;
+}
+
+/* BibTeX button rendered inline in the meta line: look like the other links */
+.archive__item-meta .bibtex-copy.meta-button {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: none !important;
+  background: none !important;
+  color: var(--global-link-color);
+  font-size: inherit;
+  font-weight: 500;
+  letter-spacing: 0;
+  vertical-align: baseline;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.archive__item-meta .bibtex-copy.meta-button:hover {
+  background: none !important;
+  border: none !important;
+  text-decoration: underline;
+  color: var(--global-link-color);
+}
+
+.archive__item-meta .bibtex-copy.meta-button.is-copied {
+  background: none !important;
+  border: none !important;
+  color: var(--global-link-color);
+}
+
+/* Subtle paper-grain background texture on body */
+body {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 /* BibTeX copy button */
