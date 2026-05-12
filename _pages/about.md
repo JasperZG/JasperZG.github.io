@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-My research focuses on understanding when foundation models for biology actually generalize — and where the standard benchmarks and interpretability tools quietly mislead. As a high school researcher at the Great Neck South Research Facility, I lead first/co-first authored work across six papers accepted to ICLR 2026 workshops and LION20 (two oral), spanning mechanistic interpretability of genomic language models and in-context learning, information-theoretic foundations of multi-task learning, a pipeline for predicting ecDNA formation and therapeutic vulnerabilities in cancer, and state-space models for vocabulary-scale sign language recognition. For this work, I was named the U.S. Presidential AI Challenge New York State Champion (2026), a U.S. Earth Science Olympiad Top 45 National Finalist (2026), and received the ASM International Special Research Award (2025). Before my current ML work, I did research at Tufts University on lithium-ion battery chemistry (Leverick Group) and at Stony Brook University on small-molecule cancer therapeutics (Tonge Group).
+My research focuses on mechanistic interpretability and methodological rigor in machine learning for the life sciences, using causal and information-theoretic tools to characterize what models learn and fail to learn, and rebuilding benchmarks and architectures on principled foundations. As a high school researcher at the Great Neck South Research Facility, I lead first/co-first authored work across six papers accepted to ICLR 2026 workshops and LION20, spanning mechanistic interpretability of genomic language models and in-context learning, information-theoretic foundations of multi-task learning, and more. Before my current ML work, I did research at Tufts University on lithium-ion battery chemistry (Leverick Group) and at Stony Brook University on small-molecule cancer therapeutics (Tonge Group).
 
 The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
 
@@ -19,23 +19,25 @@ The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
 <div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
 {% endif %}
 
+<div class="publications-list" markdown="0">
 {% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}{% continue %}{% endif %}
-      {% unless title_shown %}
-        <h3>{{ category[1].title }}</h3><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
+{% for category in site.publication_category %}
+{% assign title_shown = false %}
+{% for post in site.publications reversed %}
+{% if post.category != category[0] %}{% continue %}{% endif %}
+{% unless title_shown %}
+<h3>{{ category[1].title }}</h3><hr />
+{% assign title_shown = true %}
+{% endunless %}
+{% include archive-single.html %}
+{% endfor %}
+{% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
+{% for post in site.publications reversed %}
+{% include archive-single.html %}
+{% endfor %}
 {% endif %}
+</div>
 
 ## CV
 
