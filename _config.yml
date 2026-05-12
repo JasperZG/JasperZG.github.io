@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+site_theme               : "neutral" # Options: "default", "air", "sunrise", "mint", "dirt", "contrast", "neutral" (custom)
 title                    : "Jasper Zhang"
 title_separator          : "-"
 name                     : &name "Jasper Zhang"

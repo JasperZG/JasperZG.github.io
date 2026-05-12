@@ -1,0 +1,62 @@
+/* ==========================================================================
+    NEUTRAL THEME - DARK VERSION
+    Grayscale palette inspired by Tailwind's zinc scale.
+    ========================================================================== */
+
+/* Inter, loaded from Google Fonts in _includes/head/custom.html */
+$inter                      : 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$global-font-family         : $inter;
+$header-font-family         : $inter;
+$sans-serif                 : $inter;
+
+/* Color codes used for the theme */
+$primary-color              : #d4d4d8;  // zinc 300
+$gray                       : #a1a1aa;  // zinc 400
+$dark-gray                  : #71717a;  // zinc 500
+$darker-gray                : #52525b;  // zinc 600
+$light-gray                 : #e4e4e7;  // zinc 200
+
+$background                 : #18181b;  // zinc 900
+$background-light           : #27272a;  // zinc 800
+$background-lighter         : #3f3f46;  // zinc 700
+$text                       : #e4e4e7;  // zinc 200
+$link                       : #fafafa;  // zinc 50
+$link-dark                  : #d4d4d8;  // zinc 300
+$link-light                 : #f4f4f5;  // zinc 100
+
+/* Color codes used for the site */
+$danger-color               : #ef4444;
+$info-color                 : #a1a1aa;
+$notice-color               : #71717a;
+$success-color              : #84cc16;
+$warning-color              : #f59e0b;
+
+/* Other basic settings for the template */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.35);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 250px;
+$sidebar-screen-min-width   : 1024px;
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    --global-base-color                 : #{$primary-color};
+    --global-bg-color                   : #{$background};
+    --global-footer-bg-color            : #09090b;  // zinc 950
+    --global-border-color               : #{$background-lighter};
+    --global-dark-border-color          : #{$background-lighter};
+    --global-code-background-color      : #{$background-light};
+    --global-code-text-color            : #{$light-gray};
+    --global-fig-caption-color          : #{$gray};
+    --global-link-color                 : #{$link};
+    --global-link-color-hover           : #ffffff;
+    --global-link-color-visited         : #{$link-dark};
+    --global-masthead-link-color        : #{$text};
+    --global-masthead-link-color-hover  : #ffffff;
+    --global-text-color                 : #{$text};
+    --global-text-color-light           : #{$gray};
+    --global-thead-color                : #{$background-light};
+}
