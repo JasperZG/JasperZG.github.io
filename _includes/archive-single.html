@@ -39,9 +39,8 @@
     {% endif %}
 
     {% if post.collection == 'publications' %}
-      {% assign venue_clean = post.venue | replace: " (Oral)", "" %}
       <p class="archive__item-meta">
-        <span class="venue">{{ venue_clean }}</span>{% if post.venue contains "(Oral)" %} <span class="oral-badge">Oral</span>{% endif %}<span class="meta-sep">·</span><span class="year">{{ post.date | default: "1900-01-01" | date: "%Y" }}</span>{% if post.paperurl %}<span class="meta-sep">·</span><a class="meta-link" href="{{ post.paperurl }}">arXiv</a>{% endif %}{% if post.bibtex %}<span class="meta-sep">·</span><button class="bibtex-copy meta-button" type="button"><span class="bibtex-copy__label">BibTeX</span></button>{% endif %}
+        <span class="venue">{{ post.venue }}</span><span class="meta-sep">·</span><span class="year">{{ post.date | default: "1900-01-01" | date: "%Y" }}</span>{% if post.paperurl %}<span class="meta-sep">·</span><a class="meta-link" href="{{ post.paperurl }}">arXiv</a>{% endif %}{% if post.bibtex %}<span class="meta-sep">·</span><button class="bibtex-copy meta-button" type="button"><span class="bibtex-copy__label">BibTeX</span></button>{% endif %}
       </p>
       {% if post.excerpt %}
         <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>

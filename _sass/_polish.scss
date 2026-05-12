@@ -73,12 +73,11 @@ a {
   color: var(--global-text-color-light);
 }
 
-/* Sidebar avatar: bigger photo with a thin accent ring */
+/* Sidebar avatar: clean ring instead of heavy border */
 .author__avatar img {
   border: none !important;
   padding: 0 !important;
-  max-width: 240px !important;
-  box-shadow: 0 0 0 2px var(--global-link-color), 0 6px 14px rgba(0, 0, 0, 0.25) !important;
+  box-shadow: 0 0 0 1px var(--global-border-color);
 }
 
 /* Masthead: a hair lighter, no extra noise */
@@ -288,22 +287,6 @@ h2#news + ul li::before {
   font-weight: 700;
   font-size: 1.25em;
   line-height: 1.65;
-}
-
-/* "Oral" badge next to oral-presentation papers */
-.oral-badge {
-  display: inline-block;
-  padding: 0.1em 0.55em;
-  margin-left: 0.35em;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--global-bg-color);
-  background-color: var(--global-link-color);
-  border-radius: 2px;
-  vertical-align: 0.12em;
-  font-style: normal;
 }
 
 /* Compact publication meta line: venue · year · arXiv · BibTeX */
