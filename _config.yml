@@ -23,7 +23,7 @@ repository               : "JasperZG/JasperZG.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "websitepic.jpg"
   name             : "Jasper Zhang"
   pronouns         : "he/him"
   bio              : "High School Researcher | ML for Chemistry. Previously at Tufts and Stony Brook."
