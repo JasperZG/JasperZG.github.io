@@ -7,15 +7,64 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I'm a high school researcher at Great Neck South High School working on machine learning, with a focus on ML for chemistry and the natural sciences. I've previously done research at Tufts University and Stony Brook University.
+{% include base_path %}
 
-My recent work spans several threads:
-
-- **Mechanistic interpretability of foundation models** — probing what genomic language models and in-context learners actually represent, and where canonical methods like single-position intervention break down.
-- **ML for chemistry and biology** — target-conditional molecular property prediction, and a pipeline (ECLIPSE) for predicting extrachromosomal DNA formation, evolution, and therapeutic vulnerabilities in cancer.
-- **Foundations of multi-task learning** — information-theoretic requirements for gradient-based task affinity estimation.
-- **Efficient sequence modeling** — state space models that exploit phonological compositionality for vocabulary-scale sign language recognition.
-
-A full list of papers is on the [Publications](/publications/) page, with preprints linked through to arXiv. You can also find me on [Google Scholar](https://scholar.google.com/citations?user=RZp0HTAAAAAJ) and [GitHub](https://github.com/JasperZG).
+My research focuses on understanding when foundation models for biology actually generalize — and where the standard benchmarks and interpretability tools quietly mislead. As a high school researcher at the Great Neck South Research Facility, I lead first/co-first authored work across six papers accepted to ICLR 2026 workshops and LION20 (two oral), spanning mechanistic interpretability of genomic language models and in-context learning, information-theoretic foundations of multi-task learning, a pipeline for predicting ecDNA formation and therapeutic vulnerabilities in cancer, and state-space models for vocabulary-scale sign language recognition. For this work, I was named the U.S. Presidential AI Challenge New York State Champion (2026), a U.S. Earth Science Olympiad Top 45 National Finalist (2026), and received the ASM International Special Research Award (2025). Before my current ML work, I did research at Tufts University on lithium-ion battery chemistry (Leverick Group) and at Stony Brook University on small-molecule cancer therapeutics (Tonge Group).
 
 The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
+
+## Publications
+
+{% if site.author.googlescholar %}
+<div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% if site.publication_category %}
+  {% for category in site.publication_category %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}{% continue %}{% endif %}
+      {% unless title_shown %}
+        <h3>{{ category[1].title }}</h3><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
+## CV
+
+[Download CV as PDF]({{ base_path }}/files/Curriculum%20Vitae.pdf){: .btn .btn--primary}
+
+### Education
+
+**William A. Shine Great Neck South High School** — Great Neck, NY
+*Sep. 2023 – Jun. 2027 (Class of 2027) · GPA: 100.5/100 (weighted)*
+
+- **Coursework:** AP Calculus BC, AP Chemistry, AP Physics 2, AP US History, AP English Language.
+- **Honors:** U.S. Earth Science Olympiad Top 45 National Finalist (2026); U.S. Presidential AI Challenge New York State Champion (2026); ASM International Special Research Award (2025); AIME Qualifier (2025); Long Island Young Mathematics Scholar Award (2024).
+
+### Experience
+
+**Machine Learning & Computational Biology Researcher** — *Great Neck South Research Facility, Great Neck, NY* · *2025 – Present*
+
+- Lead first/second author across six research papers in machine learning for biology, on problems spanning mechanistic interpretability, multi-task learning theory, and molecular and genomic property prediction. Accepted to ICLR 2026 workshops with 16 total paper acceptances and 2 oral presentations (ICLR GEM Workshop, LION20).
+
+**Electrochemistry Researcher** — *Tufts University, Leverick Group, Medford, MA* · *Summer 2025*
+
+- Led an independent lithium-ion battery project under Prof. Leverick, designing cell chemistries and fabricating full cells from electrode preparation through assembly. Applied scanning electron microscopy (SEM) and related characterization techniques to analyze electrode/electrolyte microstructure and post-cycling degradation.
+
+**Biochemistry Research Assistant** — *Stony Brook University, Tonge Group, Stony Brook, NY* · *Summer 2024*
+
+- Contributed to ongoing development of small-molecule inhibitors targeting enzyme drug targets implicated in cancer pathways. Cultured E. coli for recombinant protein expression and gene extraction; performed spectrophotometry, plasmid isolation, column chromatography, and culture incubation.
+
+### Technical Skills
+
+- **Programming & ML:** Python, Java; PyTorch, NumPy, pandas, scikit-learn, Matplotlib, LaTeX; deep learning, GANs, CNNs, language models, multi-task learning, mechanistic interpretability.
+- **Lab & Field Techniques:** SEM, spectrophotometry, plasmid isolation, column chromatography, cell culture, gene extraction, recombinant protein expression, lithium-ion battery fabrication.
+- **Languages:** English (native), Mandarin Chinese.
