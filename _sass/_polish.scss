@@ -171,3 +171,82 @@ button:focus:not(:focus-visible) {
   font-size: 1.02em;
   line-height: 1.75;
 }
+
+/* Scroll progress bar — thin accent at the very top of the viewport */
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--global-link-color);
+  z-index: 200;
+  transition: width 0.08s linear;
+  opacity: 0.85;
+}
+
+/* Active section state on top nav (set by IntersectionObserver JS) */
+.greedy-nav .masthead__menu-item.is-current-section a {
+  color: var(--global-link-color);
+  font-weight: 700;
+  position: relative;
+}
+
+.greedy-nav .masthead__menu-item.is-current-section a::after {
+  content: "";
+  position: absolute;
+  left: 0.6em;
+  right: 0.6em;
+  bottom: 0.25em;
+  height: 2px;
+  background-color: var(--global-link-color);
+  border-radius: 1px;
+}
+
+/* Sidebar social icons — smooth color transition and gentle hover */
+.author__urls a {
+  transition: color 0.15s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.author__urls a:hover {
+  color: var(--global-link-color);
+  transform: translateX(2px);
+}
+
+/* Inline links inside body content — editorial: keep color, just underline */
+.page__content p a,
+.page__content li a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--global-dark-border-color);
+  text-underline-offset: 3px;
+}
+
+.page__content p a:hover,
+.page__content li a:hover {
+  color: var(--global-link-color);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1.5px;
+}
+
+/* Don't override the publication-card title links (they have their own rule) */
+.page__content .publications-list .archive__item-title a {
+  color: var(--global-link-color);
+  text-decoration: none;
+}
+
+/* More deliberate divider before each major section heading */
+h2 {
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  display: block;
+  width: 2.5em;
+  height: 2px;
+  background-color: var(--global-link-color);
+  margin-bottom: 0.6em;
+  opacity: 0.6;
+}
