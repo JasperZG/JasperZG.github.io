@@ -94,10 +94,22 @@ a {
   opacity: 0.65;
 }
 
-/* CV download button: less shouty */
+/* CV download button: outlined style that reads cleanly on the dark theme */
 .btn.btn--primary {
   font-weight: 600;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.02em;
+  font-size: 0.85em;
+  padding: 0.55em 1.1em;
+  color: var(--global-link-color) !important;
+  background-color: transparent;
+  border: 1px solid var(--global-link-color) !important;
+  border-radius: 4px;
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+.btn.btn--primary:hover {
+  background-color: var(--global-link-color);
+  color: var(--global-bg-color) !important;
 }
 
 /* Publication card hover — subtle lift, no jarring color shift */
