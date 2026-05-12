@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-My research focuses on mechanistic interpretability and methodological rigor in machine learning for the life sciences, using causal and information-theoretic tools to characterize what models learn and fail to learn, and rebuilding benchmarks and architectures on principled foundations. As a high school researcher at the Great Neck South Research Facility, I lead first/co-first authored work across six papers accepted to ICLR 2026 workshops and LION20, spanning mechanistic interpretability of genomic language models and in-context learning, information-theoretic foundations of multi-task learning, and more. Before my current ML work, I did research at Tufts University on lithium-ion battery chemistry (Leverick Group) and at Stony Brook University on small-molecule cancer therapeutics (Tonge Group).
+My research focuses on diagnosing failure modes in machine learning models for genomics, drug discovery, and molecular property prediction, and building architectures that fix them. As a high school researcher at the Great Neck South Research Facility, I lead first/co-first authored work across six papers accepted to ICLR 2026 workshops and LION20, spanning mechanistic interpretability of genomic language models and in-context learning, information-theoretic foundations of multi-task learning, and more. Before my current ML work, I did research at Tufts University on lithium-ion battery chemistry (Leverick Group) and at Stony Brook University on small-molecule cancer therapeutics (Tonge Group).
 
 The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
 
