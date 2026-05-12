@@ -81,9 +81,10 @@
     {% endif %}
 
     {% if post.bibtex %}
-      <button class="bibtex-copy" type="button" data-bibtex="{{ post.bibtex | escape }}">
+      <button class="bibtex-copy" type="button">
         <span class="bibtex-copy__label">BibTeX</span>
       </button>
+      <pre class="bibtex-source" hidden>{{ post.bibtex }}</pre>
     {% endif %}
 
   </article>
