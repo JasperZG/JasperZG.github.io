@@ -242,8 +242,13 @@ button:focus:not(:focus-visible) {
   text-decoration-thickness: 1.5px;
 }
 
-/* Don't override the publication-card title links (they have their own rule) */
+/* Publication titles use the main text color (white on dark, dark on light) */
 .page__content .publications-list .archive__item-title a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+
+.page__content .publications-list .archive__item-title a:hover {
   color: var(--global-link-color);
   text-decoration: none;
 }
