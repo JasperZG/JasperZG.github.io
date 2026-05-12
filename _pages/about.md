@@ -15,11 +15,10 @@ The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
 
 ## News
 
+- **Apr 2026** — Top 45 National Finalist, U.S. Earth Science Olympiad.
 - **Mar 2026** — Six papers accepted: five to ICLR 2026 workshops (GEM, AI&PDE, AFAA, AI4Mat) and one to LION20, with two orals.
-- **2026** — Named U.S. Presidential AI Challenge New York State Champion.
-- **2026** — Top 45 National Finalist, U.S. Earth Science Olympiad.
+- **Mar 2026** — Named U.S. Presidential AI Challenge New York State Champion.
 - **Summer 2025** — Joined the Leverick Group at Tufts University.
-- **2025** — Recipient of the ASM International Special Research Award.
 - **Summer 2024** — Joined the Tonge Group at Stony Brook University.
 
 ## Publications
