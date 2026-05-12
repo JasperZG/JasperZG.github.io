@@ -2,6 +2,7 @@
 title: "The Mechanistic Invariance Test: Genomic Language Models Fail To Learn Positional Regulatory Logic"
 collection: publications
 category: conferences
+order: 1
 permalink: /publication/2026-mechanistic-invariance-test
 date: 2026-04-27
 venue: "ICLR 2026 GEM Workshop (Oral)"

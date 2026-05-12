@@ -2,6 +2,7 @@
 title: "ECLIPSE: A Composable Pipeline for Predicting ecDNA Formation, Evolution, and Therapeutic Vulnerabilities in Cancer"
 collection: publications
 category: conferences
+order: 4
 permalink: /publication/2026-eclipse-ecdna
 date: 2026-04-27
 venue: "ICLR 2026 AI&PDE Workshop"

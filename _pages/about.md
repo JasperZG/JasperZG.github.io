@@ -24,7 +24,8 @@ The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
 ## Publications
 
 <div class="publications-list" markdown="0">
-{% for post in site.publications reversed %}
+{% assign ordered_pubs = site.publications | sort: "order" %}
+{% for post in ordered_pubs %}
 {% include archive-single.html %}
 {% endfor %}
 </div>

@@ -2,6 +2,7 @@
 title: "When Does Context Help? A Systematic Study of Target-Conditional Molecular Property Prediction"
 collection: publications
 category: conferences
+order: 5
 permalink: /publication/2026-context-molecular-property
 date: 2026-04-27
 venue: "ICLR 2026 AI4Mat Workshop"

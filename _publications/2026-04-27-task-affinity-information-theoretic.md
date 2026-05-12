@@ -2,6 +2,7 @@
 title: "Information-Theoretic Requirements for Gradient-Based Task Affinity Estimation in Multi-Task Learning"
 collection: publications
 category: conferences
+order: 3
 permalink: /publication/2026-task-affinity-information-theoretic
 date: 2026-04-27
 venue: "ICLR 2026 GEM Workshop"

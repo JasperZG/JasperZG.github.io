@@ -2,6 +2,7 @@
 title: "Single-Position Intervention Fails: Distributed Output Templates Drive In-Context Learning"
 collection: publications
 category: conferences
+order: 2
 permalink: /publication/2026-single-position-intervention
 date: 2026-06-15
 venue: "LION20 (Oral)"
