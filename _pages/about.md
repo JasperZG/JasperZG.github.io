@@ -15,10 +15,6 @@ The best way to reach me is by [email](mailto:jasperzhang1886@gmail.com).
 
 ## Publications
 
-{% if site.author.googlescholar %}
-<div class="wordwrap">You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 <div class="publications-list" markdown="0">
 {% if site.publication_category %}
 {% for category in site.publication_category %}
