@@ -8,3 +8,5 @@ venue: "ICLR 2026 GEM Workshop (Oral)"
 paperurl: "https://arxiv.org/abs/2604.06549"
 citation: "J. Zhang*, B. Cheng*. &quot;The Mechanistic Invariance Test: Genomic Language Models Fail To Learn Positional Regulatory Logic.&quot; ICLR 2026 GEM Workshop (Oral). (*equal contribution)"
 ---
+
+Built a benchmark probing whether genomic language models learn positional regulatory logic. Evaluated five major architectures spanning autoregressive, masked, and state-space paradigms, and showed that apparent positional sensitivity is driven by AT-content shortcuts — with a 100-parameter baseline outperforming billion-parameter models.

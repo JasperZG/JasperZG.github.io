@@ -25,12 +25,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Jasper Zhang"
-  pronouns         : # example: "she/her"
+  pronouns         : "he/him"
   bio              : "High School Researcher | ML for Chemistry. Previously at Tufts and Stony Brook."
   location         : "Great Neck, NY"
   employer         : "Great Neck South High School"
   uri              : # URL
-  email            : "jasperzhang1001@gmail.com"
+  email            : "jasperzhang1886@gmail.com"
 
   # Academic websites
   academia         : # URL
@@ -97,7 +97,6 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -185,6 +184,7 @@ exclude:
   - gulpfile.js
   - LICENSE
   - local
+  - "main 2.tex"
   - log
   - node_modules
   - package.json*
@@ -221,16 +221,10 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
@@ -255,15 +249,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -282,14 +267,6 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS

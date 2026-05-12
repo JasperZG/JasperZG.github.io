@@ -8,3 +8,5 @@ venue: "ICLR 2026 AI&PDE Workshop"
 paperurl: "https://arxiv.org/abs/2604.06569"
 citation: "J. Zhang*, B. Cheng*. &quot;ECLIPSE: A Composable Pipeline for Predicting ecDNA Formation, Evolution, and Therapeutic Vulnerabilities in Cancer.&quot; ICLR 2026 AI&PDE Workshop. (*equal contribution)"
 ---
+
+Exposed circular reasoning in existing extrachromosomal DNA benchmarks (artificially inflating AUROC from 0.724 to 0.967) and introduced ECLIPSE, a three-module framework combining transformer-based prediction, physics-constrained neural SDEs for stochastic dynamics, and causal inference for therapeutic targeting — achieving 80× enrichment over chance on vulnerability discovery.

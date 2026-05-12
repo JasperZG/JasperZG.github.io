@@ -8,3 +8,5 @@ venue: "LION20 (Oral)"
 paperurl: "https://arxiv.org/abs/2605.04061"
 citation: "J. Zhang*, B. Cheng*. &quot;Single-Position Intervention Fails: Distributed Output Templates Drive In-Context Learning.&quot; LION20 (Oral). (*equal contribution)"
 ---
+
+Used causal activation interventions to show that in-context task identity is distributed across demonstration tokens rather than localized in any single position. Single-position edits achieve 0% transfer, while multi-position edits reach up to 96% across LLaMA, Qwen, and Gemma.
