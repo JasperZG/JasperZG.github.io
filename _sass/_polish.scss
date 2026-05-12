@@ -311,8 +311,9 @@ h2#news + ul li::before {
   opacity: 0.45;
 }
 
-.archive__item-meta .meta-link {
-  color: var(--global-link-color);
+.archive__item-meta .meta-link,
+.archive__item-meta .meta-link:hover {
+  color: var(--global-text-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -321,14 +322,16 @@ h2#news + ul li::before {
   text-decoration: underline;
 }
 
-/* BibTeX button rendered inline in the meta line: look like the other links */
-.archive__item-meta .bibtex-copy.meta-button {
+/* BibTeX button rendered inline in the meta line: matches arXiv link style */
+.archive__item-meta .bibtex-copy.meta-button,
+.archive__item-meta .bibtex-copy.meta-button:hover,
+.archive__item-meta .bibtex-copy.meta-button.is-copied {
   display: inline;
   padding: 0;
   margin: 0;
   border: none !important;
   background: none !important;
-  color: var(--global-link-color);
+  color: var(--global-text-color);
   font-size: inherit;
   font-weight: 500;
   letter-spacing: 0;
@@ -338,16 +341,7 @@ h2#news + ul li::before {
 }
 
 .archive__item-meta .bibtex-copy.meta-button:hover {
-  background: none !important;
-  border: none !important;
   text-decoration: underline;
-  color: var(--global-link-color);
-}
-
-.archive__item-meta .bibtex-copy.meta-button.is-copied {
-  background: none !important;
-  border: none !important;
-  color: var(--global-link-color);
 }
 
 /* Subtle paper-grain background texture on body */
